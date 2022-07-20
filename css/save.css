@@ -1,0 +1,12 @@
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 214px;
+}
+
+<div class="list">
+                    <h1>Carrinho vázio</h1>
+                    <p>Adicione itens</p>
+                </div>
