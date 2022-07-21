@@ -1,4 +1,5 @@
 
+
 //*add produtos
 for(i=0; i<data.length;i++){
 
@@ -35,6 +36,23 @@ text.innerText=`${num}`
 
 total.appendChild(text)
 
+
+
+
+
+//preco
+let precoTotal = document.querySelector('.total')
+let tot=0
+let value = document.createElement('p')
+value.className='valueT'
+value.innerText=`R$ ${tot}`
+precoTotal.appendChild(value)
+
+
+
+
+
+
 //selecionar todos os botões de add a carrinho
 let add=document.querySelectorAll('.addCard')
 
@@ -50,8 +68,7 @@ function addCart(x) {
     x.preventDefault();//não recarregar a pagina
 
     //somar itens
-    num++
-    text.innerText=`${num}`
+    
 
     
 
@@ -64,7 +81,7 @@ function addCart(x) {
                     <img src="${data[i].img}" alt="">
                     <div class="cont">
                         <p>${data[i].nameItem}</p>
-                        <p class="preco">R$ ${data[i].value},00</p>
+                        <p class="preco" id="${data[i].value}">R$ ${data[i].value},00</p>
                         <a id="${data[i].id}" class="remove" href="">Remover produto</a>
 
                     </div>
@@ -93,8 +110,8 @@ function logId(x) {
     x.preventDefault();//não recarregar a pagina
 
     //subtrair
-    num--
-    text.innerText=`${num}`
+    
+    
 
     let cont = this.parentNode
     let item = cont.parentNode
@@ -103,8 +120,41 @@ function logId(x) {
             
     item.parentNode.removeChild(item)
 
-
+    let list = document.querySelector('.list')
+    console.log(list.childElementCount)
+    text.innerText=`${list.childElementCount}`
+    tot = 0
+    for (j=0;j<=list.childElementCount;j++){
+        
+        
+       
+        test=parseInt(precco[j].id)
+        tot = tot + test
+        value.innerText=`R$ ${tot}`
+    }
+    
+    if(list.childElementCount==0){
+        value.innerText=`R$ 0`
+    }
 }
+
+    let list = document.querySelector('.list')
+    console.log(list.childElementCount)
+    text.innerText=`${list.childElementCount}`
+
+
+
+    let precco = document.querySelectorAll('.preco')
+
+    tot=0
+    for (j=0;j<list.childElementCount;j++){
+        
+        test=parseInt(precco[j].id)
+        tot = tot + test
+        value.innerText=`R$ ${tot}`
+    }
+    
+
 }
 
 
