@@ -14,7 +14,7 @@ const data = [
   },
   {
     id: 2,
-    img: "../img/card/Black Hat.jpeg",
+    img: "./img/card/Black Hat.jpeg",
     nameItem: "Black Hat",
     description:
       "O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...",
@@ -25,7 +25,7 @@ const data = [
   },
   {
     id: 3,
-    img: "../img/card/Mask.jpeg",
+    img: "./img/card/Mask.jpeg",
     nameItem: "Mask",
     description:
       "Esta máscara facial durável é feita de duas camadas de tecido tratado e possui presilhas...",
@@ -36,7 +36,7 @@ const data = [
   },
   {
     id: 4,
-    img: "../img/card/T-Shirt.jpeg",
+    img: "./img/card/T-Shirt.jpeg",
     nameItem: "T-Shirt",
     description:
       "Esta t-shirt é imprescindível no seu guarda-roupa, combinando o caimento intemporal de...",
@@ -48,7 +48,7 @@ const data = [
   },
   {
     id: 5,
-    img: "../img/card/Short-Sleeve T-Shirt.jpeg",
+    img: "./img/card/Short-Sleeve T-Shirt.jpeg",
     nameItem: "Short-Sleeve T-Shirt",
     description:
       "Agora você encontrou a camiseta básica do seu guarda-roupa. É feito de um mais grosso...",
@@ -59,7 +59,7 @@ const data = [
   },
   {
     id: 6,
-    img: "../img/card/Champion Packable Jacket.jpeg",
+    img: "./img/card/Champion Packable Jacket.jpeg",
     nameItem: "Champion Packable Jacket",
     description:
       "Proteja-se dos elementos com esta jaqueta embalável Champion. Esta jaqueta de poliést...",
